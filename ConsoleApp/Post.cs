@@ -1,20 +1,4 @@
 namespace ConsoleApp;
 
-public class Post
-{
-    public Post(int userId, string body, string title)
-    {
-        UserId = userId;
-        Body = body;
-        Title = title;
-    }
-
-    public int Id { get; init; }
-    public int UserId { get; init; }
-    public string Body { get; init; }
-    public string Title { get; init; }
-    public override string ToString()
-    {
-        return $"{Id}, {UserId}, {Body}, {Title}";
-    }
-}
+public readonly record struct PostRead(int Id, int UserId, string Body, string Title);
+public readonly record struct PostWrite(int UserId, string Body, string Title);

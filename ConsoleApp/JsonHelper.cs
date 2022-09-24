@@ -15,9 +15,4 @@ public static class JsonHelper
 
         return JsonSerializer.Deserialize<T>(json, options);
     }
-    
-    public static string Serialize<T>(T obj)
-    {
-        return JsonSerializer.Serialize(obj);
-    }
 }
