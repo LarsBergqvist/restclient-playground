@@ -1,9 +1,9 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace RestClientPlayground;
+namespace ConsoleApp;
 
-public class JsonHelper
+public static class JsonHelper
 {
     public static T? Deserialize<T>(string json)
     {

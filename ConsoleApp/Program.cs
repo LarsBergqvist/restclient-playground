@@ -1,4 +1,4 @@
-﻿using RestClientPlayground;
+﻿using ConsoleApp;
 
 var httpClient = new HttpClient();
 var restClient = new RestClient(httpClient);

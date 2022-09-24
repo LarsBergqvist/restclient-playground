@@ -1,4 +1,4 @@
-namespace RestClientPlayground;
+namespace ConsoleApp;
 
 public class HeaderDef
 {

@@ -1,4 +1,4 @@
-namespace RestClientPlayground;
+namespace ConsoleApp;
 
 public class Post
 {
@@ -8,6 +8,7 @@ public class Post
         Body = body;
         Title = title;
     }
+
     public int Id { get; init; }
     public int UserId { get; init; }
     public string Body { get; init; }

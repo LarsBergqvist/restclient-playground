@@ -1,6 +1,6 @@
 using System.Text.Json;
 
-namespace RestClientPlayground;
+namespace ConsoleApp;
 
 public class RestClient : IRestClient
 {
@@ -38,7 +38,7 @@ public class RestClient : IRestClient
         {
             Method = HttpMethod.Post,
             RequestUri = new Uri($"{baseUri}{path}"),
-            Content = new StringContent(JsonSerializer.Serialize<TBody>(body))
+            Content = new StringContent(JsonSerializer.Serialize(body))
         };
         if (headers != null)
         {
